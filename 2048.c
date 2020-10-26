@@ -36,7 +36,7 @@ int main(){
 	char isim[20];
 	
 	srand(time(NULL));
-	///* COMMENT L�NES DO NOT WORK�NG ON SSH BUT WORK ON DEV C++
+	
 	printf("---------Welcome the 2048 game---------\n\nFor New User please press 'N' or want play saved game please press 'Z'\n");
 	scanf("%c",&direction);	
 	
@@ -110,7 +110,7 @@ int main(){
 		printtable(table,score,bestscore);
 	}
 	
-	//*/
+	
 	
 	newgame(table);
 	while(1){	
@@ -223,7 +223,7 @@ void gameover(int table[4][4]){
 }
 	
 	
-///* COMMENT L�NES DO NOT WORK�NG ON SSH BUT WORK ON DEV C++
+
 void newuser(){
 	char name[20];
 	printf("Please enter your name\n");			
@@ -241,7 +241,7 @@ void newuser(){
 		
 	}
 }
-//*/
+
 void newgame(int table[4][4]){
 	int i,j,x,random_num,random_row,random_column;
 	for(i=0; i<4; i++){
